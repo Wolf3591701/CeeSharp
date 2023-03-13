@@ -43,7 +43,7 @@ namespace C_Vjezba1
             Console.WriteLine("Your result is: " + Math.Sqrt(inputNumber));
 
             //Modulus(%) example: checking if number is even or odd
-            int number, modulus; 
+            int number, modulus;
             Console.WriteLine("Enter absolute number to be checked ODD/EVEN:");
             number = Convert.ToInt32(Console.ReadLine());
 
@@ -60,3 +60,4 @@ namespace C_Vjezba1
         }
     }
 }
+
