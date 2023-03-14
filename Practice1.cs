@@ -57,6 +57,32 @@ namespace C_Vjezba1
             {
                 Console.WriteLine("{0} is an ODD number!", number);
             }
+
+            //TryParse - temperature suggestion check app
+            Console.WriteLine("Is it warm enough outside?");
+            string temperature = Console.ReadLine();
+            int numTemp;
+            int numberResult;
+
+            if (int.TryParse(temperature,out numberResult))
+            {
+                numTemp = numberResult;
+            }
+            else
+            {
+                numTemp=0;
+                Console.WriteLine("Value entered is not a number, setting temperature to 0");
+            }
+
+            if (numTemp < 20)
+            {
+                Console.WriteLine("It would be a good idea to take a coat!");
+            }
+            else if (numTemp >= 20)
+            {
+                Console.WriteLine("Warm weather ahead, time for shorts!");
+            }
+
         }
     }
 }
